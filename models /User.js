@@ -1,5 +1,4 @@
 const { Schema, model } = require('mongoose');
-const moment = require('moment');
 
 
 const UserSchema = new Schema({
@@ -38,10 +37,10 @@ const UserSchema = new Schema({
 }
 );
 
-// create the User Model using the Schema
+// create the User model using the Schema
 const User = model('User', UserSchema);
 
-// get total count of comments and replies on retrieval
+
 UserSchema.virtual('friendCount').get(function() {
   return this.friends.length;
 });

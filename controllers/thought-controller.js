@@ -17,7 +17,7 @@ const thoughtController = {
         });
     },
 
-    //get one thought by ID
+    //get one thought by id
     getThoughtById({ params }, res) {
         Thought.findOne({ _id: params.id })
             .populate({
@@ -53,8 +53,7 @@ const thoughtController = {
             .catch(err => res.json(err));
     },
 
-    //add reaction
-    addReaction ({ params, body}, res) {
+    createReaction ({ params, body}, res) {
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
             { $push: { reactions: body } },
@@ -71,7 +70,7 @@ const thoughtController = {
     },
 
     //delete Reaction
-    removeReaction({ params }, res) {
+    deleteReaction({ params }, res) {
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
             { $pull: { reactions: { reactionId: params.reactionId } } },
@@ -81,7 +80,7 @@ const thoughtController = {
         .catch(err => res.json(err));
     },
 
-    //update a thought by Id
+    //update a thought by id
     updateThought({ params, body }, res) {
         Thought.findOneAndUpdate(
             { _id: params.id }, 
