@@ -10,6 +10,7 @@
 
 
 ## Installation
+![instll](https://user-images.githubusercontent.com/100335717/187068525-6d51c4da-7b4f-42e7-a1ba-60d027e6312a.png)
 
 
 ## Walkthrough
