@@ -1,8 +1,7 @@
 {
   "name": "social-network-api",
   "version": "1.0.0",
-  "private": true,
-  "description": "Social Network API",
+  "description": "social network api",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bdamota/Social-Network-API.git"
+    "url": "git+https://github.com/algotoday/social-network-api.git"
   },
-  "author": "Briana daMota",
-  "license": "MIT ",
+  "author": "aj",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bdamota/Social-Network-API/issues"
+    "url": "https://github.com/algotoday/social-network-api/issues"
   },
-  "homepage": "https://github.com/bdamota/Social-Network-API#readme",
+  "homepage": "https://github.com/algotoday/social-network-api#readme",
   "dependencies": {
     "express": "^4.17.1",
     "moment": "^2.28.0",
